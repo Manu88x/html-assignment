@@ -1,89 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
 
-<title>Student Registration</title>
 
-<link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/png" href="./images/hat.png">
+ <link rel="icon" type="image/png" href="./images/hat.png">   
+
+
+
+
 
 </head>
-
 <body>
 
-<header>
-<h1>Student Registration Form</h1>
-<p>Apply to Join ABC University</p>
-</header>
+    <h1>Student Registration Form</h1>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="courses.html">Courses</a>
-<a href="gallery.html">Gallery</a>
-<a href="register.html">Register</a>
-<a href="contact.html">Contact Us</a>
-</nav>
+    <a href="index.html">Home</a> |
+    <a href="courses.html">Courses</a> |
+    <a href="register.html">Register</a> |
+    <a href="contact.html">Contact Us</a>
 
-<main>
+    <hr>
 
-<form action="#">
+    <!--this is a form-->
 
-<label>Full Name</label>
-<input type="text" name="fullname" required>
+    <form>
 
-<label>Email Address</label>
-<input type="email" name="email" required>
+        <label>Full Name:</label><br>
+        <input type="text"><br><br>
 
-<label>Age</label>
-<input type="number" name="age" required>
+        <label>Email:</label><br>
+        <input type="email"><br><br>
 
-<label>Gender</label>
+        <label>Age:</label><br>
+        <input type="number"><br><br>
 
-<div class="gender">
+        <label>Gender:</label><br>
 
-<label>
-<input type="radio" name="gender" value="Male">
-Male
-</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
 
-<label>
-<input type="radio" name="gender" value="Female">
-Female
-</label>
+        <br><br>   <!--thsi is a line break-->
 
-</div>
+        <label>Select Course:</label><br>
 
-<label>Select Course</label>
 
-<select>
 
-<option>Computer Science</option>
+        <!--helps selection various options-->
 
-<option>Business Administration</option>
+        <select>
+            <option>Computer Science</option>
+            <option>Business Administration</option>
+            <option>Engineering</option>
+        </select>
 
-<option>Engineering</option>
+        <br><br>
 
-<option>Information Technology</option>
+        <label>Comments:</label><br>
 
-<option>Education</option>
+        <textarea rows="5" cols="30"></textarea>
 
-</select>
+        <br><br>
 
-<label>Comments</label>
+        <input type="submit" value="Register"> <!--this is like a button-->
 
-<textarea rows="5"></textarea>
-
-<input type="submit" value="Register">
-
-</form>
-
-</main>
-
-<footer>
-<p>&copy; 2026 ABC University | All Rights Reserved</p>
-</footer>
+    </form>
 
 </body>
-</html>>
+</html>
