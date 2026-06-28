@@ -1,65 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Student Registration</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Student Registration</title>
 
- <link rel="icon" type="image/png" href="./images/hat.png">   
-
-
-
-
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="./images/hat.png">
 
 </head>
+
 <body>
 
-    <h1>Student Registration Form</h1>
+<header>
+<h1>Student Registration Form</h1>
+<p>Apply to Join ABC University</p>
+</header>
 
-    <a href="index.html">Home</a> |
-    <a href="courses.html">Courses</a> |
-    <a href="register.html">Register</a> |
-    <a href="contact.html">Contact Us</a>
+<nav>
+<a href="index.html">Home</a>
+<a href="courses.html">Courses</a>
+<a href="gallery.html">Gallery</a>
+<a href="register.html">Register</a>
+<a href="contact.html">Contact Us</a>
+</nav>
 
-    <hr>
+<main>
 
-    <form>
+<form action="#">
 
-        <label>Full Name:</label><br>
-        <input type="text"><br><br>
+<label>Full Name</label>
+<input type="text" name="fullname" required>
 
-        <label>Email:</label><br>
-        <input type="email"><br><br>
+<label>Email Address</label>
+<input type="email" name="email" required>
 
-        <label>Age:</label><br>
-        <input type="number"><br><br>
+<label>Age</label>
+<input type="number" name="age" required>
 
-        <label>Gender:</label><br>
+<label>Gender</label>
 
-        <input type="radio" name="gender"> Male
-        <input type="radio" name="gender"> Female
+<div class="gender">
 
-        <br><br>
+<label>
+<input type="radio" name="gender" value="Male">
+Male
+</label>
 
-        <label>Select Course:</label><br>
+<label>
+<input type="radio" name="gender" value="Female">
+Female
+</label>
 
-        <select>
-            <option>Computer Science</option>
-            <option>Business Administration</option>
-            <option>Engineering</option>
-        </select>
+</div>
 
-        <br><br>
+<label>Select Course</label>
 
-        <label>Comments:</label><br>
+<select>
 
-        <textarea rows="5" cols="30"></textarea>
+<option>Computer Science</option>
 
-        <br><br>
+<option>Business Administration</option>
 
-        <input type="submit" value="Register">
+<option>Engineering</option>
 
-    </form>
+<option>Information Technology</option>
+
+<option>Education</option>
+
+</select>
+
+<label>Comments</label>
+
+<textarea rows="5"></textarea>
+
+<input type="submit" value="Register">
+
+</form>
+
+</main>
+
+<footer>
+<p>&copy; 2026 ABC University | All Rights Reserved</p>
+</footer>
 
 </body>
-</html>
+</html>>
